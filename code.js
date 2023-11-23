@@ -2,7 +2,7 @@ const canvas = document.getElementById('cvs');
 const pixelSize = 5;
 const ctx = canvas.getContext('2d');
 const glass = document.getElementById('glass');
-var fps = 10;
+var fps = 7;
 var X = 0, Y = X;
 var moviendo = 0;
 var buffer = null;
@@ -18,7 +18,6 @@ function create2DArray(rows,colums){
     }
     return x;
 }
-
 
 var serpiente = create2DArray(2,2);
 var mapa = create2DArray(50,50);

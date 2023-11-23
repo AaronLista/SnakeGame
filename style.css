@@ -29,11 +29,6 @@ body{
     height: 300px;
     width: 300px;
 }
-#input{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
 #contenedor{
     display: flex;
     justify-content: center;
@@ -55,18 +50,16 @@ body{
 
 @media screen and (max-width: 500px) {
     #cvs{
-        margin-top: 10px;
         width: 90vw;
         height: 90vw;
     }
     #contenedor{
         height: 50vh;
-        margin-top: 0px;
+        margin-top: 10px;
     }
     #botones{
         width: 100%;
         height: 45vh;
-        margin-top: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,7 +67,7 @@ body{
     .boton{
         width: 30vw;
         height: 30vw;
-        background-color: rgb(226, 5, 5);
+        background-color: rgb(192, 10, 10);
         box-shadow: 10px 10px rgb(116, 2, 2);
         border: none;
         border-radius: 50%;
