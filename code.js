@@ -117,6 +117,18 @@ document.onclick = evt => {
         buffer = evt.target.id
     }
 }
+
+document.onpointerdown = evt =>{
+    if(evt.target.type == 'button'){
+        evt.target.className = "pressed"
+    }
+}
+ document.onpointerup = evt =>{
+    if(evt.target.type == 'button'){
+        evt.target.className = "boton"
+    }
+ }
+
 /* esta funcion se encarga de dibujar un 
 cuadrado en la posicion a donde avanza la serpiente*/ 
 

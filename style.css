@@ -85,8 +85,15 @@ body{
         box-shadow: 10px 10px rgb(116, 2, 2);
         border: none;
         border-radius: 50%;
-        transition: all ease-in-out 0.3s;
     }  
+    .pressed{
+        width: 30vw;
+        height: 30vw;
+        background-color:rgb(116, 2, 2) ;
+        box-shadow:inset 10px 10px rgb(192, 10, 10);
+        border: none;
+        border-radius: 50%;
+    }
     #grid{
         width: 90%;
         height: 100%;
