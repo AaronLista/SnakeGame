@@ -260,11 +260,15 @@ function generarComida(t){
     }
 }
 
-/*crea un formulario cuyo unico objetivo es reiniciar la pagina*/
+/*deplega un modal para que el usuario reinicie el juego*/
 function GameOver(){
     let length = serpiente.length - 1;
     document.getElementById("glass").style.display = 'flex';
     document.getElementById("lenght").innerText += ` ${length}`
+}
+
+function NewGame(){
+    window.location.reload()
 }
 
 /*funcion principal*/
