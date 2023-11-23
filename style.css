@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Pixelify+Sans:wght@400;500&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 body{
     background-size: cover;
@@ -21,13 +25,19 @@ body{
 }
 #G_O{
     display: flex;
+    font-size: 30px;
+    color: #1c3b1f;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
-    border-radius: 20px;
+    background-color: #92b66d;
+    border: solid 5px #1c3b1f;
     height: 300px;
     width: 300px;
+}
+.restart{
+    background-color: #92b66d;
+    border: none;
 }
 #contenedor{
     display: flex;
@@ -49,6 +59,10 @@ body{
 
 
 @media screen and (max-width: 500px) {
+    #glass{
+        height: 50%;
+    }
+
     #cvs{
         width: 90vw;
         height: 90vw;
