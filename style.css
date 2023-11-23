@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+#glass{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+#G_O{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+}
+#input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 100px;
+    height: 100px;
+    background-image: url('reinicio.png');
+    background-size: cover;
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+#cvs{
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    background-color: #92b66d;
+}
+#botones{
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    #cvs{
+        width: 90%;
+        height: auto;
+    }
+    #contenedor{
+        height: 50vh;
+        margin-top: 0px;
+    }
+    #botones{
+        width: 100%;
+        height: 45vh;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton{
+        width: 100%;
+        height: 100%;
+        background-image: url('flecha.png');
+        border: none;
+        border-radius: 20px;
+        transition: all ease-in-out 0.3s;
+    }  
+    #grid{
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #grid #w{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #grid #d{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        transform: rotate(90deg);
+    }
+    #grid #s{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        transform: rotate(180deg);
+    }
+    #grid #a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        transform: rotate(-90deg);
+    }
+}
